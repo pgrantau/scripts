@@ -1,4 +1,4 @@
-gitgetter
+scripts
 =========
 
-Collection of scripts for Sysadmin stuff
+various scripts for sysadmin stuffs
