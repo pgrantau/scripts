@@ -9,8 +9,8 @@ channel = []
 filelist = []
 
 #Establish connection to Satellite
-rhn = XMLRPC::Client.new("10.80.70.72", "/rpc/api", 80)
-session_id = rhn.call "auth.login", "pgrant", "D1ana123$"
+rhn = XMLRPC::Client.new("ipaddr", "/rpc/api", 80)
+session_id = rhn.call "auth.login", "user", "pass"
 
 #List all cfgchannels in satellite
 channels = rhn.call("configchannel.listGlobals", session_id)
